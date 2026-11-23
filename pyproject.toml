@@ -1,0 +1,13 @@
+[project]
+name = "kubeopt"
+version = "0.1.0"
+description = "KubeOpt - Workstream B : optimisation de la flotte EC2 (B2-a : modèles de données)"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
